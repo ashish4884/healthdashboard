@@ -1,0 +1,144 @@
+/* Sidebar */
+
+
+.sidebar{
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+      width: 180px;
+    background: #f6faff;
+    color: #c0c4c9;
+    padding: 1rem;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .dashboardIcon{
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+
+.general-heading{
+  font-size: 12px;
+  margin-right: 60px;
+  margin-bottom: 4px;
+  align-items: start;
+}
+.tool-heading{
+  font-size: 12px;
+  margin-right: 60px;
+  margin-bottom: 4px;
+  align-items: start;
+}
+  
+  .sidebar .logo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4de9f2;
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+  
+  .sidebar .logo span {
+    color: #231b56;
+  }
+  
+  .sidebar i {
+    font-size: 1rem;
+    margin-top: 2px;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    color: #d4d8dd;
+    margin-top: 4px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content; 
+   
+  }
+  
+  .sidebar nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    font-size: 12px;
+    text-align: left;
+    color: #cdd3d8;
+    font-weight: 400;
+    cursor: pointer;
+  
+  }
+  
+  .sidebar .tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar .tools ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 116px;
+    font-size: 10px;
+  
+  }
+  
+  .sidebar .tools ul li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #cdd3d8;
+    font-weight: 400;
+  ;
+  }
+  
+  .tool-heading{
+    margin-right: 70px;
+  }
+  
+  .sidebar .setting {
+  
+    margin-right: 16px;
+  
+    display: flex;                
+    align-items: center;         
+    justify-content: center;   
+    gap: 8px;   
+    font-size: 12px;                 
+    padding: 10px;
+    border-radius: 6px;
+    color: #9b9ea6;
+    width: 100%;
+    margin-top: 78px;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  }
+  

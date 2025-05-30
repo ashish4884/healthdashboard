@@ -1,0 +1,132 @@
+/* Anatomy View */
+.anatomy-view {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 50px;
+}
+
+.anatomy-img {
+    margin-top: 32px;
+    width: 220px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.status-cards {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.organStatus {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 4px;
+    font-size: 13px;
+}
+
+.organ-card {
+    background-color: #f6faff;
+    border-radius: 10px;
+    padding: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    width: 180px;
+    font-size: 13px;
+}
+
+.organ-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #2e2a4b;
+    margin-bottom: 0.5rem;
+}
+
+.organ-icon {
+    margin-left: 8px;
+    font-size: 10px;
+}
+
+.organ-date {
+    font-size: 10px;
+
+    text-align: start;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+
+.slider-container {
+    width: 280px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--background-color, #ccc);
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-fill {
+    height: 100%;
+    width: var(--fill-percentage, 70%);
+    background-color: var(--fill-color, #4caf50);
+    border-radius: 5px;
+}
+
+.detailDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 124px;
+    border-radius: 6px;
+    color: #bebcdd;
+    font-weight: 500;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.rightIcon {
+    margin-top: 4px;
+    font-weight: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .anatomy-view {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      gap: 1.5rem;
+    }
+
+    .organStatus {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 4px;
+        font-size: 13px;
+        height: 165px;
+    }
+}
+
+

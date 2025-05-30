@@ -1,0 +1,107 @@
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0;
+  width: 100%; 
+}
+
+.search-wrapper {
+  position: relative;
+  width: 480px;
+  flex-shrink: 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 32px 8px 32px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.bell-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #3734a7;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.profile-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: flex-end;
+  margin-right: 12px;
+}
+
+.plus-icon-box {
+  background-color: #3634a5;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px; 
+  
+
+}
+
+
+/* //media queries for responsiveness */
+
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 12px;
+  }
+
+  .search-wrapper {
+    width: 100%;
+  }
+
+  .search-input {
+    font-size: 13px;
+    padding: 8px 28px 8px 28px;
+  }
+
+  .profile-icons {
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .plus-icon-box {
+    width: 24px;
+    height: 24px;
+  }
+
+  .bell-icon {
+    right: 4px;
+    font-size: 14px;
+  }
+
+  .search-icon {
+    left: 4px;
+  }
+}

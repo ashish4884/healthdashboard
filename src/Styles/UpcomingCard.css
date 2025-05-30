@@ -1,0 +1,200 @@
+.schedule-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1c153c;
+  margin-bottom: 22px;
+  margin-left: 4px;
+  font-weight: 600;
+  height: 16px;
+}
+
+.schedule-day {
+  margin-bottom: 26px;
+}
+
+.day-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-item {
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.event-time {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+.event-icon {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+.event.physiotherapy {
+  background-color: #dee3ff;
+  width: 234px;
+}
+
+.upcoming-card {
+  display: flex;
+  ;
+  flex-direction: row;
+  gap: 22px;
+}
+
+.innerPart {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.dayHeading{
+  color: #cdccdf;
+  margin-bottom: 8px;
+  margin-left: 4px;
+}
+
+
+
+/* for responsiveness */
+
+
+@media (max-width: 1024px) {
+  .schedule-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .day-title {
+    font-size: 13px;
+  }
+
+  .event-label {
+    font-size: 13px;
+  }
+
+  .event-time {
+    font-size: 12px;
+  }
+
+  .innerPart {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .upcoming-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-card {
+    padding: 14px;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
+
+  .day-title {
+    font-size: 12px;
+  }
+
+  .event-item {
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-label {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .event-time {
+    font-size: 11px;
+    align-self: flex-end;
+  }
+
+  .event-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .innerPart {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-card {
+    padding: 12px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .day-title {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .event-item {
+    padding: 6px 10px;
+  }
+
+  .event-label {
+    font-size: 11px;
+  }
+
+  .event-time {
+    font-size: 10px;
+  }
+
+  .dayHeading {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+}

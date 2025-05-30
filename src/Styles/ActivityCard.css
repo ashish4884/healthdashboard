@@ -1,0 +1,132 @@
+.activity-card {
+  
+    background: #fff;
+    padding: 4px 32px;
+    border-radius: 20px;
+    width:467px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  
+  .activity-header h2 {
+    font-size: 12px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .activity-header span {
+    font-size: 12px;
+    color: #bec4c9;
+    margin: 0;
+    
+  }
+  
+  .activity-graph {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 180px;
+  }
+  
+  .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bars {
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+    margin-bottom: 66px;
+  }
+  
+  .bar {
+    width: 6px;
+    border-radius: 4px;
+  }
+  
+  .bar.blue {
+    background: #3f51b5;
+  }
+  
+  .bar.cyan {
+    background: #00bcd4;
+  }
+  
+  .bar.purple {
+    background: #8e24aa;
+  }
+  
+  .day-label {
+    font-size: 12px;
+    color: #666;
+  }
+
+
+
+  /* responsive  */
+
+
+
+  @media (max-width: 768px) {
+    .activity-card {
+      width: 85%;
+      padding: 8px 16px;
+      border-radius: 16px;
+    }
+  
+    .activity-header h2,
+    .activity-header span,
+    .day-label {
+      font-size: 11px;
+    }
+  
+    .activity-graph {
+      height: 120px;
+      overflow-x: auto;
+    }
+  
+    .bars {
+      gap: 2px;
+      margin-bottom: 24px;
+    }
+  
+    .bar {
+      width: 4px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .activity-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+  
+    .activity-card {
+      padding: 6px 12px;
+      border-radius: 12px;
+    }
+  
+    .activity-graph {
+      height: 100px;
+    }
+  
+    .bar {
+      width: 3px;
+    }
+  
+    .day-label {
+      font-size: 10px;
+    }
+  }
+  
+  
